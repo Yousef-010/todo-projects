@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+
+:root{
+    --main-color:white;
+    --bg:black;
+    --border:2px solid white;
+    --html-bg:rgb(128, 125, 125);
+}
+
+html{
+    margin: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    background-color: var(--html-bg);
+ }
+
+.header{
+    background-color: var(--bg);
+     
+}
+
+.header .navbar img{
+    border: var(--border);
+}
+
+.header .navbar a{
+    color: var(--main-color);
+    font-size: 2rem;
+    margin: 4rem;
+    text-align: center;
+    padding: 1.5rem;
+    text-decoration: none;
+
+}
+
+.header .navbar a:hover{
+    text-decoration: underline;
+}
+ 
+
+.footer {
+    text-align: center;
+    background-color: var(--bg);
+    color: var(--main-color);
+    padding: 1rem;
+}
+
+.footer a {
+    float: right;
+    padding: 0.1rem;
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+    color: var(--main-color);
+    background-color: var(--bg);
+}
+
+ 
+
+.main .contact-form {
+    padding: 2rem;
+    background-color: var(--bg);
+    color: var(--main-color);
+}
+
+.contact-form{
+    text-align: center;
+}
+
+.main .contact-form input {
+     width: 20rem;
+    margin: 2rem;
+     padding: 0.5rem;
+}
+
+.main .contact-form a {
+    padding: 0.5rem;
+    margin: 2rem;
+    background-color:white;
+    color: black;
+    text-decoration: none;
+
+
+}
+
+@media only screen and (max-width:900px) {
+    
+    html{
+        margin: 1rem;
+    }
+    .header, .main, .footer {
+        width:100%;
+    }  
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 1rem;
+        padding: 1rem;
+     
+    }
+    .footer  {
+        width: 96%;
+
+    }
+
+    .header .navbar img{
+        width: 200px;
+      }
+
+      .main .contact-form textarea{
+        width: 22rem;
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+    
+    html{
+        margin: 1rem;
+    }
+    .header, .main, .footer {
+        width:100%;
+    }  
+    .header .navbar a{
+        font-size: 1.2rem;
+        margin: 0.4rem;
+        padding: 1rem;
+     
+    }
+    .footer  {
+        width: 94%;
+
+    }
+
+    .header .navbar img{
+        width: 200px;
+    }
+    .main .contact-form textarea{
+        width: 21rem;
+    }
+
+}
+
