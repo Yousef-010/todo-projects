@@ -41,34 +41,6 @@ if (gender=='male' || gender=='female'){
     }
 
     // part 2 
-
-    let questionOne = prompt('Are you enterd name ? yes/no')
-    let questionTow = prompt('Are you enterd gender ? yes/no')
-    let questionThree = prompt('Are you enterd age ? yes/no')
-
-  function yesOrNo(){
-
-    let array = []
-
-       if (questionOne=='yes'){
-        array.push(name)
-       }else{array.push("invalid input")}
-
-
-       if (questionTow=='yes'){
-        array.push(gender)
-       }else{array.push("invalid input")}
-
-       
-       if (questionThree=='yes'){
-        array.push(age)
-       }else{array.push("invalid input")}
-
-
-
-        console.log(array)
-}
-yesOrNo()
-
+    
 // end of part 2
 
