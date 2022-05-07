@@ -1,9 +1,11 @@
 
 //part 1 
 
-let name = prompt('enter your name please !! ')
+let userName = prompt('enter your userName please !! ')
 let gender = prompt('enter your gender as male or female !!')
 let age = prompt('enter your age ..')
+
+let array = []
 
 if (gender=='male' || gender=='female'){
         if (age <=0 ) {
@@ -16,13 +18,16 @@ if (gender=='male' || gender=='female'){
             }
             else{
                 if(gender=='male'){
-                    alert('welcome MR ' + name + ' to our website :) answer the following questions please ')
+                    alert('welcome MR ' + userName + ' to our website :) answer the following questions please ')
                 }
                 else{
-                    alert('welcome MS ' + name + ' to our website :) answer the following questions please ')
+                    alert('welcome MS ' + userName + ' to our website :) answer the following questions please ')
                 }
             }
         }
+        
+
+
     }
     else{
         let age = prompt('your gender is invalid please enter your age agian .. ')
@@ -35,40 +40,56 @@ if (gender=='male' || gender=='female'){
                 alert('welcome message skipped :( answer the following questions please ')
             }
             else{
-                    alert('welcome '+ name + ' to our website :) answer the following questions please ')
+                    alert('welcome '+ userName + ' to our website :) answer the following questions please ')
             }
         }
     }
 
     // part 2 
     
-    let questionOne = prompt('Are you enterd name ? yes/no')
-    let questionTow = prompt('Are you enterd gender ? yes/no')
-    let questionThree = prompt('Are you enterd age ? yes/no')
+    let questionOne = prompt('where are you fom ? ')
+    let questionTow = prompt('what is you major ?')
+    let questionThree = prompt('how much is your salary ? ')
 
-  function yesOrNo(){
+   
+    
+     function sendToArray(){
 
-    let array = []
-
-       if (questionOne=='yes'){
-        array.push(name)
-       }else{array.push("invalid input")}
-
-
-       if (questionTow=='yes'){
-        array.push(gender)
-       }else{array.push("invalid input")}
-
+        if (userName=='') {
+            userName='invalid input'
+        }
+           
+         if (gender=='') {
+            gender='invalid input'
+        }
+           
+         if (age=='') {
+            age='invalid input'
+        }
+           
+         if (questionOne=='') {
+            questionOne='invalid input'
+        }
+           
+         if (questionTow=='') {
+            questionTow='invalid input'
+        }
+           
+         if (questionThree=='') {
+            questionThree='invalid input'
+        }
        
-       if (questionThree=='yes'){
-        array.push(age)
-       }else{array.push("invalid input")}
+        
+            array.push(userName,gender,age,questionOne,questionTow,questionThree)
+        
 
+        
+        console.log(array);
+    }
+    
 
+sendToArray()    
 
-        console.log(array)
-}
-yesOrNo()
-
+    
 // end of part 2
 
